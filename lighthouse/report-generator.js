@@ -5,11 +5,11 @@ const desktopConfig = require('lighthouse/lighthouse-core/config/lr-desktop-conf
 const reportGenerator = require('lighthouse/report/report-generator');
 
 function fromDateToStr(date) {
-    date.setTime(date.getTime());
-    var estTime = new Date(date.getTime()).toLocaleTimeString([], { timeZone: 'America/New_York', timeStyle: 'short' }); // Time without seconds.
-    var estDate = new Date(date.getTime()).toDateString().replace(/^\S+\s/,''); // Date without a day name.
+    // date.setTime(date.getTime());
+    // var estTime = new Date(date.getTime()).toLocaleTimeString([], { timeZone: 'America/New_York', timeStyle: 'short' }); // Time without seconds.
+    // var estDate = new Date(date.getTime()).toDateString().replace(/^\S+\s/,''); // Date without a day name.
 
-    return estDate.replace(/\s/g, '_') + '-' + estTime.replace(/\s/g, '_').replaceAll(":", "_");
+    return '123512345235';
 }
 
 module.exports = async function createLighthouseReport(currentState, reportName) {

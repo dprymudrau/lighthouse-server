@@ -108,3 +108,5 @@ dist
 lighthouse-reports
 
 crypto.key
+
+.vscode
